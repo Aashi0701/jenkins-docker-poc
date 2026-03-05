@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Aashi0701/jenkins-docker-poc.git'
+                git branch: 'main',
+                    url: 'https://github.com/Aashi0701/jenkins-docker-poc.git'
             }
         }
 
